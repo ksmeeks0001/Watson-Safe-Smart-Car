@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+        <style media="screen">
+    body{
+        background: #114357;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      .container{
+        margin: 200px auto;
+        width: 350px;
+        background: #f7f7f7;
+        box-shadow: 0 0 3px rgba(0,0,0 0.1)
+      } 
+      
+      input{
+        color: #2980b9;
+        font-size: 18px;
+        width: 100%;
+        padding: 13px 13px 13px 20px;
+        background: #f7f7f7;
+        box-sizing: border-box;
+    }
+    
+     h1{
+        background: #2980b9;
+        color: white;
+        margin: 0;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: normal;
+    }
+    
+      button{
+    background: white;
+    width: 350px;
+    line-height: 40px;
+    color: #666;
+    text-align:inherit;
+    }
+    
+        button:nth-child(2n){
+    background: #f7f7f7;
+    }
+        
+        #status{
+      background: white;
+      width: 150px;
+      line-height: 60px;
+      color: #555;
+      text-align:inherit;
+    }
+    
+    </style>
+    <title>Safe Car Display</title>
+    <script type="text/javascript">
+        var ws;
+        var wsUri = "ws:";
+        var loc = window.location;
+        console.log(loc);
+        if (loc.protocol === "https:") { wsUri = "wss:"; }
+        // This needs to point to the web socket in the Node-RED flow
+        // ... in this case it's ws/simple
+        wsUri += "//" + loc.host + loc.pathname.replace("simple","ws/simple");
+
+        function wsConnect() {
+            console.log("connect",wsUri);
+            ws = new WebSocket(wsUri);
+            //var line = "";    // either uncomment this for a building list of messages
+            ws.onmessage = function(msg) {
+                var line = "";  // or uncomment this to overwrite the existing message
+                // parse the incoming message as a JSON object
+                var data = msg.data;
+                //console.log(data);
+                // build the output from the topic and payload parts of the object
+                line += "<p>"+data+"</p>";
+                // replace the messages div with the new "line"
+               // document.getElementById("messages").innerHTML = line;
+                //ws.send(JSON.stringify({data:data}));
+                $(".MESSAGES").append( line)
+            }
+            ws.onopen = function() {
+                // update the status div with the connection status
+                document.getElementById('status').innerHTML = "connected";
+                //ws.send("Open for data");
+                console.log("connected");
+            }
+            ws.onclose = function() {
+                // update the status div with the connection status
+                document.getElementById('status').innerHTML = "not connected";
+                // in case of lost connection tries to reconnect every 3 secs
+                setTimeout(wsConnect,3000);
+            }
+        }
+        
+      
+    $( document ).ready(function() {
+    console.log( "ready!" );
+    $("input[type = 'text']").keypress(function () {
+            if (event.which === 13) {
+              console.log("yes");
+               //grabbing the new todo text from input
+               var userResponse = $(this).val();
+               //clear the input field
+               $(this).val("")
+               //create new li and add to ul
+               $(".MESSAGES").append('<p>' + "          " + userResponse + '</p>').css("color", "blue");
+               doit(userResponse)
+               
+            }
+        });
+});
+  
+   function doit(m) {
+            if (ws) { ws.send(m); }
+        }
+        
+</script>
+    </head>
+    <body onload="wsConnect();" onunload="ws.disconnect();">
+        <div class="container">
+          <font face="comic sans">
+        <h1>Safe Car Display <i class="fas fa-car"></i></h1>
+        <button type="button" onclick='doit("help");'>Drowsy Driver</button>
+		<button type="button" onclick='doit("mismatch");'>Driver ID Mismatch</button>
+        <!--<hr/>-->
+        <!--<div id="status">unknown</div>-->
+        <div class="MESSAGES" style="overflow: scroll"></div>
+        
+        <input type="text" name="" value="" placeholder="Type your response">
+        </font>  
+        </div>
+    </body>
+</html>
