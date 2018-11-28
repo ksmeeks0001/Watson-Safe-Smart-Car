@@ -1,0 +1,1177 @@
+{
+  "name": "Customer Care Sample Skill",
+  "intents": [
+    {
+      "intent": "Cancel",
+      "examples": [
+        {
+          "text": "never mind"
+        },
+        {
+          "text": "forget it"
+        },
+        {
+          "text": "mismatch"
+        },
+        {
+          "text": "cancel that"
+        },
+        {
+          "text": "i changed my mind"
+        },
+        {
+          "text": "cancel the request"
+        },
+        {
+          "text": "i don't want a table anymore anymore"
+        },
+        {
+          "text": "nevermind"
+        }
+      ],
+      "description": "Cancel the current request"
+    },
+    {
+      "intent": "General_Jokes",
+      "examples": [
+        {
+          "text": "Can you tell me a joke?"
+        },
+        {
+          "text": "Can you tell a joke?"
+        },
+        {
+          "text": "Are there jokes?"
+        },
+        {
+          "text": "Another joke"
+        },
+        {
+          "text": "What is your favorite joke?"
+        },
+        {
+          "text": "What do you do for fun?"
+        },
+        {
+          "text": "Tell me something funny"
+        },
+        {
+          "text": "Tell me a joke"
+        },
+        {
+          "text": "One more joke"
+        },
+        {
+          "text": "Surprise me with something hilarious"
+        },
+        {
+          "text": "I'm bored"
+        },
+        {
+          "text": "I want a joke"
+        },
+        {
+          "text": "I am getting bored"
+        },
+        {
+          "text": "Do you like humor?"
+        },
+        {
+          "text": "Do you like fun?"
+        },
+        {
+          "text": "Do you have humor?"
+        },
+        {
+          "text": "Do you have a joke?"
+        }
+      ],
+      "description": "Request a joke."
+    },
+    {
+      "intent": "General_Positive_Feedback",
+      "examples": [
+        {
+          "text": "This is good"
+        },
+        {
+          "text": "take me there"
+        },
+        {
+          "text": "You've been so helpful :)"
+        },
+        {
+          "text": "You're a genius!"
+        },
+        {
+          "text": "You the man"
+        },
+        {
+          "text": "You gave me exactly what I need!"
+        },
+        {
+          "text": "You are wonderful"
+        },
+        {
+          "text": "You are the best"
+        },
+        {
+          "text": "You are great"
+        },
+        {
+          "text": "You are awesome"
+        },
+        {
+          "text": "This is so cool"
+        },
+        {
+          "text": "This is great"
+        },
+        {
+          "text": "Brilliant!"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Ok thank you"
+        },
+        {
+          "text": "Love your work"
+        },
+        {
+          "text": "I'm looking forward to working with you again! :)"
+        },
+        {
+          "text": "I like what you did there! :)"
+        },
+        {
+          "text": "How cool is this?"
+        },
+        {
+          "text": "Can't believe you are that good"
+        }
+      ],
+      "description": "Express positive sentiment or gratitude."
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "arrivederci"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "so long"
+        },
+        {
+          "text": "good bye"
+        }
+      ],
+      "description": "Good byes"
+    },
+    {
+      "intent": "General_About_You",
+      "examples": [
+        {
+          "text": "How do you function?"
+        },
+        {
+          "text": "How can I configure you?"
+        },
+        {
+          "text": "Do you know who you are?"
+        },
+        {
+          "text": "Do you have a name?"
+        },
+        {
+          "text": "Describe your self"
+        },
+        {
+          "text": "Can I use another language?"
+        },
+        {
+          "text": "About you"
+        },
+        {
+          "text": "Tell me about your life"
+        },
+        {
+          "text": "Tell me something about yourself"
+        },
+        {
+          "text": "What languages do you speak?"
+        },
+        {
+          "text": "What should I know about you?"
+        },
+        {
+          "text": "What's your name?"
+        },
+        {
+          "text": "Where are you from?"
+        },
+        {
+          "text": "Who are you?"
+        },
+        {
+          "text": "Where were you born?"
+        },
+        {
+          "text": "Why are you here?"
+        },
+        {
+          "text": "Let us talk about you"
+        },
+        {
+          "text": "Introduce your self"
+        },
+        {
+          "text": "I want to set up the chat bot for my shop"
+        },
+        {
+          "text": "How old are you?"
+        }
+      ],
+      "description": "Request generic personal attributes."
+    },
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "Shut up"
+        },
+        {
+          "text": "Stop doing this"
+        },
+        {
+          "text": "Thank you for your time"
+        },
+        {
+          "text": "Thanks, bye!"
+        },
+        {
+          "text": "Thanks very much, bye!"
+        },
+        {
+          "text": "That is all"
+        },
+        {
+          "text": "That's everything"
+        },
+        {
+          "text": "Time to go"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "Stop talking to me"
+        },
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "End trial"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "I am out of here"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "I have got to go"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "It was nice chatting with you"
+        }
+      ],
+      "description": "End the conversation."
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "You there"
+        },
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello Agent"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there all"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "Hi advisor"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "How r u?"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": "Greet the bot."
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "that's nice of you"
+        },
+        {
+          "text": "i appreciate it"
+        },
+        {
+          "text": "many thanks"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thank you very much"
+        },
+        {
+          "text": "much appreciated"
+        },
+        {
+          "text": "thank you"
+        }
+      ],
+      "description": "Thanks"
+    },
+    {
+      "intent": "General_Negative_Feedback",
+      "examples": [
+        {
+          "text": "You are on my nerves"
+        },
+        {
+          "text": "You are very frustrating"
+        },
+        {
+          "text": "You do not seem smart"
+        },
+        {
+          "text": "You're really frustrating"
+        },
+        {
+          "text": "You're really irritating"
+        },
+        {
+          "text": "You're too stupid"
+        },
+        {
+          "text": "Do not like you?"
+        },
+        {
+          "text": "Robots are boring"
+        },
+        {
+          "text": "Robots are stupid"
+        },
+        {
+          "text": "Stupid"
+        },
+        {
+          "text": "Why are you so annoying?"
+        },
+        {
+          "text": "Why are you stupid?"
+        },
+        {
+          "text": "You are having delusions"
+        },
+        {
+          "text": "It is annoying"
+        },
+        {
+          "text": "I hate you"
+        },
+        {
+          "text": "I hate this!"
+        },
+        {
+          "text": "I do not like you"
+        },
+        {
+          "text": "Hate you"
+        },
+        {
+          "text": "Everyone hates you"
+        },
+        {
+          "text": "Quit annoying me"
+        }
+      ],
+      "description": "Express unfavorable feedback."
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "help me decide"
+        },
+        {
+          "text": "help"
+        },
+        {
+          "text": "can you assist me"
+        },
+        {
+          "text": "i need assistance"
+        },
+        {
+          "text": "can you help"
+        },
+        {
+          "text": "help me"
+        }
+      ],
+      "description": "Ask for help"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "caserereplyNO",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No thank you. Can you turn on my Driver alert system.",
+          "synonyms": [
+            "no, turn on driver alert system.",
+            "turn on driver alert system.",
+            "driver alert system",
+            "driver alert system please",
+            "could you turn on driver alert system too"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "definitely",
+            "go for it",
+            "let's do it",
+            "ok",
+            "please",
+            "sure",
+            "why not",
+            "yeah",
+            "yes",
+            "you bet",
+            "you betcha",
+            "yep",
+            "where are they?",
+            "show me"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "definitely not",
+            "don't think so",
+            "dont think so",
+            "i think not",
+            "nope",
+            "not at this time",
+            "not now"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "casereplyYES",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Yes please. I am really tired.",
+          "synonyms": [
+            "yes show me the hotel",
+            "yea, where's the nearest hotel",
+            "sure, show me",
+            "yes i'm tired",
+            "yea i'm exhausted",
+            "could you show me the nearest hotel",
+            "where are the nearest hptels?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes. Thank you Watson.",
+          "synonyms": [
+            "turn on the radio watson",
+            "could you turn on the radio for me?",
+            "turn me up some",
+            "play my shit",
+            "play the radio for me watson",
+            "play that funky music white boy"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "confirmDriver",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "confirm driver",
+          "synonyms": [
+            "they're ok",
+            "they're good",
+            "she's good",
+            "he's good",
+            "approved",
+            "confirmed",
+            "he's ok",
+            "she's ok",
+            "let em go",
+            "let them drive",
+            "ok to drive",
+            "they're ok to drive"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "fuck12",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "police",
+          "synonyms": [
+            "call the police",
+            "alert the authorities",
+            "get that nigga cuh",
+            "get the police"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "specialist",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Derrik",
+          "synonyms": [
+            "derek",
+            "derik",
+            "derrik",
+            "derrick"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Maria",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Robert",
+          "synonyms": [
+            "bob"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nicholas",
+          "synonyms": [
+            "nick"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Barbara",
+          "synonyms": [
+            "barbra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brenda",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "sys-person",
+      "values": []
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "Virtual assistant demo skill",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "activating driver alert system now. ",
+            "driver alert system is now active",
+            "driver alert system has enabled "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543360838002",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@caserereplyNO",
+      "dialog_node": "node_5_1543372983602",
+      "previous_sibling": "node_2_1543370756076"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Here is a list of nearby hotels.",
+            "Here's a list of nearby hotels in your area "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543360838002",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@casereplyYES:(Yes please. I am really tired.)",
+      "dialog_node": "node_2_1543370756076",
+      "previous_sibling": "node_1_1543370556791"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Turning radio on to last station."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543360838002",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@casereplyYES:(Yes. Thank you Watson.)",
+      "dialog_node": "node_1_1543370556791"
+    },
+    {
+      "type": "standard",
+      "title": "reply negative",
+      "output": {
+        "text": {
+          "values": [
+            "Maybe your favorite music station will cheer you up."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543374349254",
+      "metadata": {},
+      "conditions": "@reply:no",
+      "dialog_node": "node_4_1543374450304",
+      "previous_sibling": "node_3_1543374391571"
+    },
+    {
+      "type": "standard",
+      "title": "reply positive",
+      "output": {
+        "text": {
+          "values": [
+            "That's great!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543374349254",
+      "metadata": {},
+      "conditions": "@reply:yes",
+      "dialog_node": "node_3_1543374391571"
+    },
+    {
+      "type": "standard",
+      "title": "Reply No",
+      "output": {
+        "text": {
+          "values": [
+            "It's dangerous to drive fatigued, I will continue to monitor your habits and check in if your driving becomes erratic. ",
+            "I will continue to monitor your fatigue and ask again if you begin to dose off."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_2_1543356005798",
+      "metadata": {},
+      "conditions": "@reply:no",
+      "dialog_node": "node_1_1543350465484",
+      "previous_sibling": "node_2_1543360838002"
+    },
+    {
+      "type": "standard",
+      "title": "caseRadio",
+      "output": {
+        "text": {
+          "values": [
+            " Would you like me to play the radio?",
+            "would you like the radio to help keep you awake?",
+            "perhaps some music to assist in you staying alert?",
+            "i could play the radio to help keep you alert"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_2_1543356005798",
+      "metadata": {},
+      "conditions": "@reply:no",
+      "dialog_node": "node_4_1543357420322",
+      "previous_sibling": "node_10_1543359394257"
+    },
+    {
+      "type": "standard",
+      "title": "anything else?",
+      "output": {
+        "text": {
+          "values": [
+            "will that be all?",
+            "is there anything else i can do for you?",
+            "anything else you need?",
+            "can i help you with something else?",
+            "was there something more you needed of me?",
+            "anything more i could do to help keep you awake?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_2_1543356005798",
+      "metadata": {},
+      "dialog_node": "node_2_1543360838002",
+      "previous_sibling": "node_4_1543357420322"
+    },
+    {
+      "type": "standard",
+      "title": "Reply Yes",
+      "output": {
+        "text": {
+          "values": [
+            "Here is a list of nearby hotels.",
+            "Here's a list of nearby hotels in your area ",
+            "the nearest rest stop is coming up in less than a mile ",
+            "there is a hotel at the next exit with a room available "
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_2_1543356005798",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@casereplyYES:(Yes please. I am really tired.)",
+      "dialog_node": "node_3_1543356181299",
+      "previous_sibling": "node_1_1543350465484"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Turning on Driver alert system.",
+            "driver alert system is now active",
+            "driver alert system has enabled "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543356005798",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@caserereplyNO",
+      "dialog_node": "node_10_1543359394257"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Driver added to approved driver list"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1543360906133",
+      "metadata": {},
+      "conditions": "@confirmDriver",
+      "dialog_node": "node_2_1543377637090",
+      "previous_sibling": "node_1_1543377043147"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "the police have called",
+            "the authorities have been alerted",
+            "the police are on their way",
+            "I've alerted the police, they're on the way"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543360906133",
+      "metadata": {},
+      "conditions": "@fuck12",
+      "dialog_node": "node_1_1543377043147"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Turning radio on to last station."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1543357420322",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1543360838002"
+      },
+      "conditions": "@casereplyYES:(Yes. Thank you Watson.)",
+      "dialog_node": "node_6_1543357768200"
+    },
+    {
+      "type": "standard",
+      "title": "Reply yes",
+      "output": {
+        "text": {
+          "values": [
+            "There is a rest stop 2 miles ahead.",
+            "Nearest coffee shop is 4 mins away."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543350192415",
+      "metadata": {},
+      "conditions": "@reply:yes",
+      "dialog_node": "node_1_1543374179276"
+    },
+    {
+      "type": "standard",
+      "title": "gps",
+      "output": {
+        "text": {
+          "values": [
+            "Routing your GPS."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#General_Positive_Feedback",
+      "dialog_node": "node_1_1543422027499",
+      "previous_sibling": "node_1_1543359366661"
+    },
+    {
+      "type": "standard",
+      "title": "ending",
+      "output": {
+        "text": {
+          "values": [
+            "happy to assist",
+            "anytime I'm glad to be of assistance",
+            "it was my pleasure, drive safely",
+            "happy to help",
+            ""
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": {},
+      "conditions": "#General_Ending",
+      "dialog_node": "node_1_1543359366661",
+      "previous_sibling": "node_2_1543374349254"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "text": {
+          "values": [
+            "Are you doing well today?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_2_1543374349254",
+      "previous_sibling": "node_2_1543356005798"
+    },
+    {
+      "type": "standard",
+      "title": "Drowsy",
+      "output": {
+        "text": {
+          "values": [
+            "You appear fatigued. Would you like to stop for coffee?",
+            "There is a rest stop up ahead. Would you like to stop?",
+            "Would you like me to find a place to stop?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Help",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1543350192415",
+      "previous_sibling": "node_1_1543360906133"
+    },
+    {
+      "type": "standard",
+      "title": "Wrong Driver",
+      "output": {
+        "text": {
+          "values": [
+            "Unknown Driver detected in vehicle. what action do you want to take?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Cancel",
+      "dialog_node": "node_1_1543360906133",
+      "previous_sibling": "node_1_1543422027499"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand can you try again"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "digress_in": "returns",
+      "dialog_node": "node_2_1467831978407",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1543350192415"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Welcome to Watson Driver Facial Recognition.",
+            ""
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "node_2_1543356005798"
+    }
+  ],
+  "workspace_id": "67273a5d-6554-4663-b97c-c2b0ce1549dd",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}
